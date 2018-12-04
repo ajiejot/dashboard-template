@@ -1,14 +1,42 @@
 import React from 'react'
-import './SideNav.css'
+
 
 const SideNav = props =>(
-<div className="sidebar-wrapper">
-    <ul className="sidebar-nav">
-        <li><a href="#">Account</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Logout</a></li>
-    </ul>
-</div>
+<div className="side-nav">
+			<div className="logo">
+				<i className="fa fa-tachometer"></i>
+				<span>Brand</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<span><i className="fa fa-user"></i></span>
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+
+							<span><i className="fa fa-envelope"></i></span>
+							<span>Messages</span>
+						</a>
+					</li>
+					<li className="active">
+						<a href="#">
+							<span><i className="fa fa-bar-chart"></i></span>
+							<span>Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i classNameName="fa fa-credit-card-alt"></i></span>
+							<span>Payments</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
 )
 
